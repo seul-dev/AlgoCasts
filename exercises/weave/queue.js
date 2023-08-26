@@ -8,6 +8,9 @@ class Queue {
   constructor() {
     this.data = [];
   }
+  get size() {
+    return this.data.length;
+  }
 
   add(record) {
     this.data.unshift(record);
@@ -15,6 +18,10 @@ class Queue {
 
   remove() {
     return this.data.pop();
+  }
+
+  peek() {
+    return this.data[this.size - 1];
   }
 }
 
