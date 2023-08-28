@@ -3,6 +3,10 @@ class Stack {
     this.data = [];
   }
 
+  get size() {
+    return this.data.length;
+  }
+
   push(record) {
     this.data.push(record);
   }
